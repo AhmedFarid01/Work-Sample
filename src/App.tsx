@@ -134,7 +134,7 @@ const engagements = [
 
 const selectedWork = [
   {
-    index: "Ahmed Farid",
+    index: "A",
     kind: "Product platform",
     title: "Replace this with a representative project",
     description:
@@ -293,7 +293,11 @@ function Footer() {
         </div>
         <div className="flex flex-col gap-3 text-sm lg:items-end">
           <a
-            href={`mailto:${identity.email}`}
+            href={`https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(
+              identity.email,
+            )}`}
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex items-center gap-2 transition hover:text-[hsl(var(--primary))]"
             data-testid="link-footer-email"
           >
@@ -305,19 +309,21 @@ function Footer() {
             {identity.location}
           </span>
           <div className="mt-3 flex items-center gap-4 text-[hsl(var(--muted-foreground))]">
-            <a
-              href="#"
-              onClick={(event) => event.preventDefault()}
-              aria-label="GitHub placeholder"
+            {/* <a
+              href="https://github.com/AhmedFarid01"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
               className="transition hover:text-[hsl(var(--foreground))]"
               data-testid="link-footer-github"
             >
               <Github size={17} />
-            </a>
+            </a> */}
             <a
-              href="#"
-              onClick={(event) => event.preventDefault()}
-              aria-label="LinkedIn placeholder"
+              href="https://www.linkedin.com/in/ahmed-farid-568a60245/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
               className="transition hover:text-[hsl(var(--foreground))]"
               data-testid="link-footer-linkedin"
             >
