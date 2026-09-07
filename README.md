@@ -1,4 +1,4 @@
-# Alex Mercer — Full Stack Engineer Portfolio
+# Ahmed Farid — Full Stack Engineer Portfolio
 
 A premium, conversion-focused portfolio for a full stack engineer who builds and supports complete digital products: business websites, web applications, backend APIs, databases, authentication, integrations, SEO, performance improvements, and ongoing technical maintenance.
 
